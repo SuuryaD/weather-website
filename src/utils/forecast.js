@@ -11,7 +11,7 @@ const forecast = (longitude , latitude , callback) => {
             callback('cannot find the place')
         }
         else{
-            callback(undefined , 'it is currently ' + body.list[0].main.temp + '. the humidity is ' + body.list[0].main.humidity)
+            callback(undefined , 'It is currently ' + body.list[0].main.temp + '. The humidity is ' + body.list[0].main.humidity + 'The highest today is ' + body.list[0].main.temp_max)
         }
     })
 }
